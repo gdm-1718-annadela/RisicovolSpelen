@@ -1,0 +1,105 @@
+.download-vormen {
+    float: none;
+}
+
+.vormen {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 2900px;
+    justify-content: space-between;
+}
+.vorm {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+}
+.vorm:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.vorm .orange-title {
+    font-size: 15px;
+}
+
+.vorm .tekst{
+    font-size: 13px;
+    width: 30%;
+    padding: 5%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vorm .foto {
+    width: 40%;
+    height: 300px;
+    background-color: gray;
+
+}
+
+.vorm .foto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.vorm .line {
+    width: 100px;
+    height: 5px;
+    background-color: #E4564E;
+}
+
+.vorm .icoon {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 300px;
+}
+
+.vorm .icoon img {
+    width: 100px;
+    height: 100px;
+}
+.vorm:nth-child(odd) .icoon {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.vorm:nth-child(odd) .foto,  .vorm:nth-child(odd) .foto img{
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.vorm:nth-child(even) .foto,  .vorm:nth-child(even) .foto img{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.vertical-line {
+    background-color: #E4564E;
+    width: 5px;
+    height: 2600px;
+    position: absolute;
+    top: 200px;
+    left: 45%;
+    z-index: -1;
+}
+
+.vorm-box{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.vormen-container {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.vormen-container ul {
+    line-height: 30px;
+    list-style-position: inside;
+}

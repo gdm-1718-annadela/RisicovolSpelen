@@ -1,0 +1,58 @@
+
+/* Container */
+
+.block-container ul {
+    margin-left: 20px;
+}
+
+/* Titel */
+
+.title {
+    font-family: 'Neo Sans Pro black', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.red-title {
+    color: #E4564E;
+}
+.orange-title {
+    color: #F9B000
+}
+.green-title {
+    color: #BBCD09
+}
+
+.blue-title{
+    color: #0AABCD;
+}
+
+/* Intro */
+.intro {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.intro p {
+    margin-top: 10px;
+    width: 40%;
+    line-height: 30px;
+}
+
+.intro ul {
+    margin-left: 30px;
+    width: 40%;
+    list-style-position: inside;
+    list-style-image: url('../assets/illustrations/ulblack.png');
+}
+
+.intro ul li {
+    margin: 10px 0;
+}
+
+/* box */
+
+.box ul {
+    margin: 2% 0 2% 20px;
+    list-style-image: url('./../assets/illustrations/ulblack.png');
+}

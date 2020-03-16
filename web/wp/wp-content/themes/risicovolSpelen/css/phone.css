@@ -1,0 +1,275 @@
+@media only screen and (max-width: 1275px) {
+    .second-container{
+        width: 100%;
+        margin-left: 0;
+        padding: 10%;
+        background-color: #0AABCD;
+    }
+
+    .second-container ul li{
+        line-height: 40px;
+    }
+    
+    .second-container ul, .second-container p {
+        font-size: 13px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width: 800px) {
+/* body {
+    position: fixed
+} */
+
+.nav {
+    background-color: yellow;
+    display: none;
+    
+}
+
+.nav div ul {
+    flex-direction: column;
+    /* padding: 10% 0 10% 20%; */
+    background-color: #4B4B4B;
+    height: 100vh;
+    padding: 10% 0 0 0;
+}
+
+.nav div ul li {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    padding: 0 0 0 20%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -20px;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.521);
+}
+.nav div ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+.nav div ul li:nth-child(1){
+    background-color: #4B4B4B;
+    box-shadow: none;
+}
+ .nav div ul li:nth-child(2){
+    background-color: #F9B000;
+}
+.nav div ul li:nth-child(3){
+    background-color: #BBCD09;
+}
+.nav div ul li:nth-child(4){
+    background-color: #0AABCD;
+}
+.nav div ul li:nth-child(5){
+    background-color: #E4564E;
+}
+
+
+.nav-icon {
+    display: block;
+}
+
+.phoneNav {
+    display: block;
+    background-color: green;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translate(0,0)
+}
+html {
+    overflow-x:hidden; 
+    margin-top: 0 !important;
+
+}
+
+.intro {
+    height: 40%;
+    overflow: scroll;
+}
+
+
+/* hoofdpagina */
+
+.second-container {
+    /* height: auto; */
+    width: 100%;
+    margin-left: 0;
+    padding: 10%;
+    background-color: #0AABCD;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.intro p, .intro ul {
+    width: 80%;
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.intro ul {
+    font-size: 13px;
+}
+
+.background-image {
+    max-width: 100%;
+    max-height: 40%;
+}
+
+/* nieuws */
+
+.news-container{
+    flex-direction: column;
+}
+
+.blue-background {
+    /* display: none; */
+}
+
+.news-container > div {
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%, 0)
+}
+.news-container > div:nth-child(2) {
+    display: none;
+}
+.news-container > div:nth-child(3) {
+    display: none;
+}
+
+.facebooktext {
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+.second-container h3{
+    font-size: 20px;
+}
+
+.second-container ul, .second-container p {
+    margin: 20px 0;
+}
+
+.box {
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.background{
+    padding: 0;
+    height: auto;
+    margin: 0;
+    /* background-color: blue; */
+    background-image: none !important;
+
+}
+
+.box img{
+    top: 0;
+    float: none;
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.fourth-container{
+    background-color: #4B4B4B;
+    padding: 10%;
+    width: 100%;
+    height: auto;
+    margin:0;
+    color: white;
+    font-size: 13px;
+}
+
+.fourth-container h3 {
+    color: white;
+}
+
+.box .btn-border {
+   display: none;
+}
+
+.box .download {
+    float: none;
+    clear: both;
+    border-radius: 5px;
+    margin-left: 0;
+    width: auto;
+    margin-right: 0;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.box .download a {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.box img {
+    float: none !important;
+    width: 80%;
+    padding: 0;
+    margin-left: 10%;
+}
+
+.head h3, .head ul li {
+    font-size: 15px;
+    font-family: 'Neo Sans Pro'
+}
+
+.vorm {
+    height: auto;
+}
+.vorm .foto, .vertical-line {
+    display: none;
+}
+.vorm .tekst, .vorm .icoon {
+    width: 80%;
+    height: auto;
+}
+
+.vorm .icoon {
+    height: 50px;
+}
+.vormen {
+    height: auto;
+    justify-content: start;
+}
+
+.vorm .icoon img {
+    width: 50px;
+    height: 50px;
+}
+
+.vorm:nth-child(even){
+    flex-direction: row-reverse;
+}
+.vorm:nth-child(odd) .icoon{
+    flex-direction: row;
+}
+
+.vorm .line{
+    display: none;
+}
+.column{
+    column-count: 1;
+}
+
+.flex {
+    height: auto;
+}
+}
