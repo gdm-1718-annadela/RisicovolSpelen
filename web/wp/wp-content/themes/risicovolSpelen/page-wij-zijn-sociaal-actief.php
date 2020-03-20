@@ -2,6 +2,7 @@
 
 if (have_posts() ):
     while( have_posts() ): the_post();
+    get_template_part('sidebar')
     ?>
 
     <div class="container">
@@ -19,7 +20,9 @@ if (have_posts() ):
     <div class="block-container">
     <h2 class="title green-title">Méér weten over risicovol spelen? Bekijk onze media!</h2>
     <div id="nav" class="nav nav-media"><?php wp_nav_menu( array( 'theme_location' => 'media-menu' ) ); ?></div>
-    </div> 
+    <div id="nav" class="nav-phone"><?php wp_nav_menu( array( 'theme_location' => 'media-menu' ) ); ?></div>
+    
+</div> 
 
     <?php
     endwhile;

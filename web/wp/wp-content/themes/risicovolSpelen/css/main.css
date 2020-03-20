@@ -159,14 +159,6 @@ html {
 
 /* ---- */
 
-.videos {
-    display: flex;
-}
-
-video {
-    width: 30%;
-}
-
 .gallery-item, .gallery-item>dt{
     width: 100%;
     height: 200px;
@@ -180,4 +172,66 @@ video {
     height: 100%;
     border: none;
 
+}
+
+.margin-left{
+    margin-left: 10%;
+}
+.margin-top{
+    margin-top: 10%;
+}
+
+/* block without Content */
+
+.block-none-box{
+    /* background-color: red; */
+}
+
+.block-none-box img {
+    width: 30%;
+}
+
+/* hashtag */
+
+.hashtag{
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.hashtag a {
+    text-decoration: none;
+}
+
+.hashtag:hover{
+    font-size: 20px;
+}
+
+/* sidebar */
+
+.sidebar{
+    position: fixed;
+    -webkit-transform: rotate(-90deg);
+    transform-origin: 250px 200px;
+    color: #E4564E;
+    display: flex;
+}
+
+.sidebar a {
+    color: #E4564E;
+}
+
+/* volzet */
+
+.volzet{
+    background-color: #E4564E;
+    width: 200px;
+    text-align: center;
+    padding: 10px 0;
+    border: white solid 20px;
+    border-radius: 50px;
+    position: absolute;
+    right: 5%;
+    color: white;
+    /* margin-top: -200px; */
 }

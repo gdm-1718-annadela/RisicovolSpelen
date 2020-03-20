@@ -19,6 +19,11 @@
     color: #4B4B4B;
     font-size: 18px;
     font-weight: bolder;
+    transition: 0.3s;
+}
+.nav ul li:hover a {
+    color: #0AABCD;
+    font-size: 20px;
 }
 
 .nav-icon {
@@ -31,14 +36,13 @@
 /* Second navigation */
 
 .second-nav{
-    width: 60%;
+    width: 70%;
     margin: 0;
-    margin-left: 30%;
+    margin-left: 20%;
     transform: translate(0, 0);
 }
 
 .second-nav li {
-    border-left: solid 1px gray;
     padding-left: 5%;
 
 }
@@ -50,6 +54,7 @@
 
 .second-nav ul li a:hover  {
     color: orange;
+    font-size: 16px;
 }
 
 /* media navigation */
@@ -76,5 +81,9 @@
 }
 
 .nav-media-above .menu-image-title-below img{
+    display: none;
+}
+
+.nav-phone{
     display: none;
 }

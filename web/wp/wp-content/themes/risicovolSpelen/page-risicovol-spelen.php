@@ -1,6 +1,7 @@
 <?php
 if (have_posts() ):
     while( have_posts() ): the_post();
+    get_template_part('sidebar')
     ?>
     <div class="container">
         <?php get_header();?>
@@ -18,7 +19,7 @@ if (have_posts() ):
     <div class="scroll" id="Gevaar"></div>
     <?php get_template_part('orangeblock') ?>
 
-    <div class="scroll" id="vormen">
+    <div class="scroll" id="vormen"></div>
     <div class="vormen-container">
         <h3 class="title red-title"><?php echo get_field('titel_vormen')?></h3>
         <?php echo get_field('intro_vormen')?>
@@ -32,7 +33,7 @@ if (have_posts() ):
     <?php get_template_part('greenblock'); ?>
     
     <div class="scroll" id="veilig"></div>
-    <?php get_template_part('redblock');
+    <?php get_template_part('redunderblock');
 
     endwhile;
 endif;

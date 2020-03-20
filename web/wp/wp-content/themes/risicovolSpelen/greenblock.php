@@ -1,4 +1,4 @@
-<div class="container gevaar-container">
+<div class="container">
 <div class="head">
     <h3 class="title green-title"><?php echo get_field('titel_groen') ?></h3>
     <?php echo get_field('intro_groen') ?>

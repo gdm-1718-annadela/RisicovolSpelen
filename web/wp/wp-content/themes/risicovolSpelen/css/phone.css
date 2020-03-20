@@ -1,27 +1,28 @@
 @media only screen and (max-width: 1275px) {
-    .second-container{
+    .blue-container{
         width: 100%;
         margin-left: 0;
         padding: 10%;
         background-color: #0AABCD;
     }
 
-    .second-container ul li{
+    .blue-container ul li{
         line-height: 40px;
     }
     
-    .second-container ul, .second-container p {
+    .blue-container ul, .blue-container p {
         font-size: 13px;
         line-height: 40px;
     }
 }
 @media only screen and (max-width: 800px) {
-/* body {
-    position: fixed
-} */
 
+    .body{
+        top: 0;
+        
+    }
+/* navigation */
 .nav {
-    background-color: yellow;
     display: none;
     
 }
@@ -29,9 +30,10 @@
 .nav div ul {
     flex-direction: column;
     /* padding: 10% 0 10% 20%; */
-    background-color: #4B4B4B;
+    background-color: white;
     height: 100vh;
     padding: 10% 0 0 0;
+    z-index: 100;
 }
 
 .nav div ul li {
@@ -44,17 +46,21 @@
     border-top-right-radius: 20px;
     margin-top: -20px;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.521);
+    z-index: 100;
+
 }
 .nav div ul li a {
     color: white;
     font-size: 14px;
+    z-index: 100;
+
 }
 
 .nav div ul li:nth-child(1){
-    background-color: #4B4B4B;
+    background-color: white;
     box-shadow: none;
 }
- .nav div ul li:nth-child(2){
+.nav div ul li:nth-child(2){
     background-color: #F9B000;
 }
 .nav div ul li:nth-child(3){
@@ -70,6 +76,7 @@
 
 .nav-icon {
     display: block;
+    
 }
 
 .phoneNav {
@@ -81,32 +88,44 @@
     top: 0;
     left: 0;
     bottom: 0;
-    transform: translate(0,0)
-}
-html {
-    overflow-x:hidden; 
-    margin-top: 0 !important;
+    transform: translate(0,0);
+        z-index: 100;
 
 }
+
+.nav-media div ul li{
+    background-color: transparent;
+}
+
+.nav-phone{
+    display: flex;
+}
+
+.nav-phone ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
+.nav-phone ul li a{
+    color: black;
+    text-decoration: none;
+}
+.nav-phone ul li {
+    width: 20%;
+}
+.nav-phone ul li img{
+    height: 0;
+}
+
+.menu-media-container{
+    width: 100%;
+}
+
+/* Intro */
 
 .intro {
     height: 40%;
     overflow: scroll;
-}
-
-
-/* hoofdpagina */
-
-.second-container {
-    /* height: auto; */
-    width: 100%;
-    margin-left: 0;
-    padding: 10%;
-    background-color: #0AABCD;
-}
-
-.title {
-    font-size: 25px;
 }
 
 .intro p, .intro ul {
@@ -119,6 +138,33 @@ html {
     font-size: 13px;
 }
 
+/* sidebar */
+
+.sidebar{
+    display: none;
+}
+
+
+/* hoofdpagina */
+
+.blue-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 10%;
+    background-color: #0AABCD;
+}
+
+.title {
+    font-size: 25px;
+    font-family: 'Neo Sans Pro black';
+}
+
+.second-title {
+    margin-top: 50px;
+}
+
+
+
 .background-image {
     max-width: 100%;
     max-height: 40%;
@@ -129,11 +175,6 @@ html {
 .news-container{
     flex-direction: column;
 }
-
-.blue-background {
-    /* display: none; */
-}
-
 .news-container > div {
     width: 80%;
     margin-left: 50%;
@@ -152,28 +193,20 @@ html {
     transform: translate(-50%, 0);
 }
 
-
-.second-container h3{
-    font-size: 20px;
-}
-
-.second-container ul, .second-container p {
-    margin: 20px 0;
-}
+/* box */
 
 .box {
     box-shadow: none;
     background-color: transparent;
     font-size: 13px;
+    padding: 10%;
 }
 
 .background{
     padding: 0;
     height: auto;
     margin: 0;
-    /* background-color: blue; */
     background-image: none !important;
-
 }
 
 .box img{
@@ -182,8 +215,31 @@ html {
     max-width: 100%;
     max-height: 50%;
 }
+.box .btn-border {
+    display: none;
+ }
+ 
+ .box .download {
+     float: none;
+     clear: both;
+     border-radius: 5px;
+     margin-left: 0;
+     width: auto;
+     margin-right: 0;
+     padding: 0;
+     margin: 10px 0;
+ }
+ 
+ .box .download a {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     width: 100%;
+ }
 
-.fourth-container{
+/* red container */
+
+.red-container{
     background-color: #4B4B4B;
     padding: 10%;
     width: 100%;
@@ -193,43 +249,66 @@ html {
     font-size: 13px;
 }
 
-.fourth-container h3 {
+.red-container h3 {
     color: white;
 }
 
-.box .btn-border {
-   display: none;
+/* footer */
+
+.footer{
+    margin-top: 0;
 }
 
-.box .download {
-    float: none;
-    clear: both;
-    border-radius: 5px;
-    margin-left: 0;
-    width: auto;
-    margin-right: 0;
-    padding: 0;
-    margin: 10px 0;
+/* block-container */
+
+.block-container{
+    font-size: 13px;
 }
 
-.box .download a {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.block-container .flex{
+    flex-direction: column;
+    width: 100%;
+    padding: 10%;
+}
+.block-container .flex p{
+    overflow: scroll;
+
+    width: 100%;
+}
+.block-container .flex p a{
     width: 100%;
 }
 
-.box img {
-    float: none !important;
-    width: 80%;
-    padding: 0;
-    margin-left: 10%;
+/* block-none-box */
+
+.block-none-box{
+    padding: 10%;
+}
+.block-none-box .flex{
+    flex-direction: column;
+}
+.block-none-box .flex img{
+    width: 100%;
+}
+.block-none-box .flex .margin-left{
+    margin-left: 0;
+    margin-top: 10px;
 }
 
-.head h3, .head ul li {
+/* replay tools */
+
+.tools div a{
+    width: 50px;
+    height: 50px;
+}
+
+/* head */
+.head ul li {
     font-size: 15px;
     font-family: 'Neo Sans Pro'
 }
+
+/* vormen */
 
 .vorm {
     height: auto;
@@ -265,6 +344,8 @@ html {
 .vorm .line{
     display: none;
 }
+
+/* ohters */
 .column{
     column-count: 1;
 }
@@ -272,4 +353,31 @@ html {
 .flex {
     height: auto;
 }
+
+.second-nav-footer {
+    display: none;
+}
+
+.bg-logo{
+    display: none;
+}
+
+.background-icoon{
+    display: none;
+}
+
+/* beheerders */
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .nav-footer ul{
+        flex-direction: column;
+    }
+
+    .nav-footer ul li a {
+        font-family: 'Neo Sans Pro', Arial, Helvetica, sans-serif;
+        line-height: 30px;
+    }
 }

@@ -2,6 +2,7 @@
 
 if (have_posts() ):
     while( have_posts() ): the_post();
+    get_template_part('sidebar')
     ?>
 
     <div class="container">
@@ -31,7 +32,7 @@ if (have_posts() ):
     ?><div class="scroll" id="ReplayMeth"></div><?php
     get_template_part('orangeblock');
     ?><div class="scroll" id="Tools"></div><?php
-    get_template_part('greenblock');
+    get_template_part('redblock');
     ?>
     <div class="vertical-bar"></div>
     <div class="horizontal-bar"></div>
@@ -43,8 +44,7 @@ if (have_posts() ):
         'post_type' => 'Tools',
         'post_status' => 'publish',
         'order' => 'asc', 
-        'posts_per_page' => 12,
-
+        'posts_per_page' => -1
     ));
     
     while ($query->have_posts()) {
@@ -68,7 +68,7 @@ if (have_posts() ):
     
     wp_reset_query();
     ?><div class="scroll"></div><?php
-    get_template_part('redblock');
+    get_template_part('redunderblock');
     endwhile;
 endif;
 

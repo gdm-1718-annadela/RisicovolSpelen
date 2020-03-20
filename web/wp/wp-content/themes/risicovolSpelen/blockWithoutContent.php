@@ -1,4 +1,4 @@
-<div>
+<div class="block-none-box">
 <?php
 if (get_field('achtergrond_without_box')){
     ?>
@@ -17,7 +17,8 @@ if (get_field('achtergrond_without_box')){
         <?php
     }
     ?>
-    <?php echo get_field('content_without_box') ?>
+    <div class=" margin-left"><?php echo get_field('content_without_box') ?></div>
+    </div>
 
 </div>
 </div>

@@ -3,9 +3,10 @@ get_header();
 
 if (have_posts() ):
     while( have_posts() ): the_post();
+    get_template_part('sidebar')
     ?>
 
-<div class="container" >
+<div  >
         <?php get_header();?>
         <div id="nav" class="nav nav-media-above"><?php wp_nav_menu( array( 'theme_location' => 'media-menu' ) ); ?></div>
 

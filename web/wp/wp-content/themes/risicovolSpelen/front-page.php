@@ -1,6 +1,7 @@
 <?php
 if (have_posts() ):
     while( have_posts() ): the_post();
+    get_template_part('sidebar')
     ?>
 
     <div class="container">
@@ -27,7 +28,8 @@ if (have_posts() ):
     </div>
 
     <?php get_template_part('meerwaarde');?>
-    <?php get_template_part('redblock');
+    <?php get_template_part('redunderblock');
+    get_template_part('partners');
     
     endwhile;
 endif;

@@ -1,4 +1,4 @@
-<div class="container gevaar-container">
+<div class="container">
 <div class="head">
     <h3 class="title blue-title"><?php echo get_field('titel_blauw') ?></h3>
     <?php echo get_field('intro_blauw') ?>
@@ -20,14 +20,15 @@ if (get_field('achtergrond')){
         <img src="<?php echo get_field('illustratie_blauw') ?>">
         <?php
     }
-    if(get_field('link_blauw')){
-        ?>
-        <div class="download download-blue" ><a href="<?php echo get_field('link_blauw')?>"><?php echo get_field('titel_link_blauw')?></a></div>
-        <div class="download btn-border"></div>
-        <?php
-    }
     ?>
-    <?php echo get_field('tekst_blauw') ?>
+    <?php echo get_field('tekst_blauw') ;
+        if(get_field('link_blauw')){
+            ?>
+            <div class="download download-blue" ><a href="<?php echo get_field('link_blauw')?>"><?php echo get_field('titel_link_blauw')?></a></div>
+            <div class="download btn-border"></div>
+            <?php
+        }
+        ?>
 
     </div> 
 </div>

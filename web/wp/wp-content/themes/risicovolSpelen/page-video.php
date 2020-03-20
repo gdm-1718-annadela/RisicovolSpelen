@@ -3,9 +3,10 @@ get_header();
 
 if (have_posts() ):
     while( have_posts() ): the_post();
+    get_template_part('sidebar')
     ?>
 
-<div class="container">
+<div >
         <?php get_header();?>
         <div id="nav" class="nav nav-media-above"><?php wp_nav_menu( array( 'theme_location' => 'media-menu' ) ); ?></div>
 
@@ -28,21 +29,23 @@ if (have_posts() ):
         $query->the_post();
 
         ?>
-        <div class="">
-        <div class="head">
-            <h1 ><?php echo get_the_title() ?></h1>
-        </div>
-        <?php
-        ?>
-        <div class="without-box videos">
-            <?php
+        <div class="block-container video-container">
+            <div class="videos">
+                <?php
             if(get_field('video')){
                 ?>
-                <div class="video"><?php echo get_field('video') ?></div>
+                <div class="video">
+                    <?php echo get_field('video') ?>
+                    <div class="green-line"></div>
+                </div>
+                <div class="green-line-vertical"></div>
                 <?php
             }
             ?>
-            <div><?php echo get_the_content() ?></div>
+            <div class="video-content">
+                <h1 class="second-title green-title"><?php echo get_the_title() ?></h1>
+                <?php echo get_the_content() ?>
+            </div>
 
             </div> 
         </div>      

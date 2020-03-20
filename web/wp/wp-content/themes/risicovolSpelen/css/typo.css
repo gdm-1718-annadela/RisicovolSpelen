@@ -27,6 +27,12 @@
     color: #0AABCD;
 }
 
+.second-title{
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
 /* Intro */
 .intro {
     margin-top: 5%;
@@ -40,9 +46,8 @@
 }
 
 .intro ul {
-    margin-left: 30px;
+    margin-left: 40px;
     width: 40%;
-    list-style-position: inside;
     list-style-image: url('../assets/illustrations/ulblack.png');
 }
 
@@ -56,3 +61,4 @@
     margin: 2% 0 2% 20px;
     list-style-image: url('./../assets/illustrations/ulblack.png');
 }
+

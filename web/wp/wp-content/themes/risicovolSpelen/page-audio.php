@@ -3,9 +3,10 @@ get_header();
 
 if (have_posts() ):
     while( have_posts() ): the_post();
+    get_template_part('sidebar')
     ?>
 
-<div class="container">
+<div>
         <?php get_header();?>
         <div id="nav" class="nav nav-media-above"><?php wp_nav_menu( array( 'theme_location' => 'media-menu' ) ); ?></div>
 
@@ -28,13 +29,10 @@ if (have_posts() ):
         $query->the_post();
 
         ?>
-        <div class="block-container">
-        <div class="head">
-            <h3 class="title"><?php echo get_the_title() ?></h3>
-        </div>
-        <?php
-        ?>
-        <div class="without-box">
+        <div class="block-container block-none-box">
+        <h3 class="title green-title"><?php echo get_the_title() ?></h3>
+
+        <div class="box margin-top">
             <?php
             if(get_field('illustratie')){
                 ?>
@@ -42,7 +40,7 @@ if (have_posts() ):
                 <?php
             }
             ?>
-            <div><?php echo get_the_content() ?></div>
+            <div class="margin-left"><?php echo get_the_content() ?></div>
 
             </div> 
         </div>        

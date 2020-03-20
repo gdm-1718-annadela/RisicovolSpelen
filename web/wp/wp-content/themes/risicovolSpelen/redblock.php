@@ -1,28 +1,33 @@
-<div class="block-container red-container">
-    <h3 class="title"><?php echo get_field('titel_rood') ?></h3>
+<div class="container">
+<div class="head">
+    <h3 class="title red-title"><?php echo get_field('titel_red') ?></h3>
+    <?php echo get_field('intro_red') ?>
+</div>
+<?php
+if (get_field('achtergrond_red')){
+    ?>
+    <div class="background" style="background-image: url(<?php echo get_field('achtergrond_red')?>">
     <?php
-    if(get_field('intro_rood')&& get_field('afbeelding_rood')){
-    ?>
-        <div>
-            <img src="<?php echo get_field('afbeelding_rood') ?>">
-            <?php echo get_field('intro_rood') ?>
-        </div>
-        <?php echo get_field('content_rood') ?>
+    }else {
+    ?><div class="background"><?php
+    }
+?>
+<div class="box">
     <?php
-    } else if (get_field('intro_rood')){
+    if(get_field('illustratie_red')){
+        ?>
+        <img src="<?php echo get_field('illustratie_red') ?>">
+        <?php
+    }
     ?>
-        <div>
-            <?php echo get_field('intro_rood') ?>
-        </div>
-        <?php echo get_field('content_rood');
-    }else if (get_field('afbeelding_rood')){
-    ?>
-        <div>
-            <img src="<?php echo get_field('afbeelding_rood') ?>">
-        </div>
-        <?php echo get_field('content_rood'); 
-    } else {
-        echo get_field('content_rood');
+    <?php echo get_field('tekst_red');
+        if(get_field('link_red')){
+            ?>
+            <div class="download download-red" ><a href="<?php echo get_field('link_red')?>"><?php echo get_field('titel_link_red')?></a></div>
+            <div class="download btn-border"></div>
+            <?php
         }
-    ?>
+        ?>
+
+    </div> 
 </div>
