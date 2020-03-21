@@ -87,3 +87,7 @@
 .nav-phone{
     display: none;
 }
+
+.menu-login li a{
+    color: red;
+}
