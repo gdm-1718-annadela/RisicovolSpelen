@@ -1,0 +1,47 @@
+.beheer-partners{
+    /* background-color: blue; */
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.beheer-partners .beheerders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.beheer-partners .beheerders img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+.name{
+    font-size: 20px;
+    color: gray;
+    transition: 0.5;
+}
+
+@media only screen and (min-width: 800px) {
+    .beheer-partners .beheerders img{
+
+    -webkit-filter: grayscale(100%);
+    }
+}
+
+
+.beheer-partners .beheerders:hover img{
+    width: 150px;
+    height: 150px;
+    -webkit-filter: grayscale(0%);
+
+}
+.beheer-partners .beheerders:hover .name{
+    color: #F9B000;
+}

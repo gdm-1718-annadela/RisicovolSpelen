@@ -1,0 +1,83 @@
+.blue-background{
+    position: absolute;
+    width: 100vw;
+    top: 90vh;
+    z-index: -1;
+}
+
+/* facebook text */
+.facebooktext {
+    width: 53%;
+    margin-left: 10%;
+    padding:  7% 0 5%;  
+    font-size: 14px;
+}
+
+.facebooktext p a {
+    color: #0AABCD;
+    font-family: 'Neo Sans Pro black';
+    text-decoration: none;
+}
+
+strong {
+    font-family: 'Neo Sans Pro black';
+}
+
+.facebooktext p a:hover {
+    color: #F9B000;
+}
+
+.background-white{
+    background-image: url('../assets/illustrations/white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+/* Blue container */
+.blue-container {
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.blue-container h3{
+    font-size: 24px;
+    font-family: 'Neo Sans Pro black', Arial, Helvetica, sans-serif;
+    margin-bottom: 2%;
+}
+
+.blue-container ul li{
+    list-style-position: inside;
+    list-style-image: url('../assets/illustrations/ul.png');
+    line-height: 40px;
+}
+
+.blue-container ul, .blue-container p {
+    margin: 2% 0;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+/* partners block */
+
+.logo-partners{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-partners a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin: 80px 0 0 0 ;
+}
+
+.logo-partners img {
+    width: 70%;
+}

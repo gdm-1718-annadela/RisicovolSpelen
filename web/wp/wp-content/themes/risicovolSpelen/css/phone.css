@@ -1,0 +1,383 @@
+@media only screen and (max-width: 1275px) {
+    .blue-container{
+        width: 100%;
+        margin-left: 0;
+        padding: 10%;
+        background-color: #0AABCD;
+    }
+
+    .blue-container ul li{
+        line-height: 40px;
+    }
+    
+    .blue-container ul, .blue-container p {
+        font-size: 13px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    .body{
+        top: 0;
+        
+    }
+/* navigation */
+.nav {
+    display: none;
+    
+}
+
+.nav div ul {
+    flex-direction: column;
+    /* padding: 10% 0 10% 20%; */
+    background-color: white;
+    height: 100vh;
+    padding: 10% 0 0 0;
+    z-index: 100;
+}
+
+.nav div ul li {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    padding: 0 0 0 20%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -20px;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.521);
+    z-index: 100;
+
+}
+.nav div ul li a {
+    color: white;
+    font-size: 14px;
+    z-index: 100;
+
+}
+
+.nav div ul li:nth-child(1){
+    background-color: white;
+    box-shadow: none;
+}
+.nav div ul li:nth-child(2){
+    background-color: #F9B000;
+}
+.nav div ul li:nth-child(3){
+    background-color: #BBCD09;
+}
+.nav div ul li:nth-child(4){
+    background-color: #0AABCD;
+}
+.nav div ul li:nth-child(5){
+    background-color: #E4564E;
+}
+
+
+.nav-icon {
+    display: block;
+    
+}
+
+.phoneNav {
+    display: block;
+    background-color: green;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translate(0,0);
+        z-index: 100;
+
+}
+
+.nav-media div ul li{
+    background-color: transparent;
+}
+
+.nav-phone{
+    display: flex;
+}
+
+.nav-phone ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
+.nav-phone ul li a{
+    color: black;
+    text-decoration: none;
+}
+.nav-phone ul li {
+    width: 20%;
+}
+.nav-phone ul li img{
+    height: 0;
+}
+
+.menu-media-container{
+    width: 100%;
+}
+
+/* Intro */
+
+.intro {
+    height: 40%;
+    overflow: scroll;
+}
+
+.intro p, .intro ul {
+    width: 80%;
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.intro ul {
+    font-size: 13px;
+}
+
+/* sidebar */
+
+.sidebar{
+    display: none;
+}
+
+
+/* hoofdpagina */
+
+.blue-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 10%;
+    background-color: #0AABCD;
+}
+
+.title {
+    font-size: 25px;
+    font-family: 'Neo Sans Pro black';
+}
+
+.second-title {
+    margin-top: 50px;
+}
+
+
+
+.background-image {
+    max-width: 100%;
+    max-height: 40%;
+}
+
+/* nieuws */
+
+.news-container{
+    flex-direction: column;
+}
+.news-container > div {
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%, 0)
+}
+.news-container > div:nth-child(2) {
+    display: none;
+}
+.news-container > div:nth-child(3) {
+    display: none;
+}
+
+.facebooktext {
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* box */
+
+.box {
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 10%;
+}
+
+.background{
+    padding: 0;
+    height: auto;
+    margin: 0;
+    background-image: none !important;
+}
+
+.box img{
+    top: 0;
+    float: none;
+    max-width: 100%;
+    max-height: 50%;
+}
+.box .btn-border {
+    display: none;
+ }
+ 
+ .box .download {
+     float: none;
+     clear: both;
+     border-radius: 5px;
+     margin-left: 0;
+     width: auto;
+     margin-right: 0;
+     padding: 0;
+     margin: 10px 0;
+ }
+ 
+ .box .download a {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     width: 100%;
+ }
+
+/* red container */
+
+.red-container{
+    background-color: #4B4B4B;
+    padding: 10%;
+    width: 100%;
+    height: auto;
+    margin:0;
+    color: white;
+    font-size: 13px;
+}
+
+.red-container h3 {
+    color: white;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 0;
+}
+
+/* block-container */
+
+.block-container{
+    font-size: 13px;
+}
+
+.block-container .flex{
+    flex-direction: column;
+    width: 100%;
+    padding: 10%;
+}
+.block-container .flex p{
+    overflow: scroll;
+
+    width: 100%;
+}
+.block-container .flex p a{
+    width: 100%;
+}
+
+/* block-none-box */
+
+.block-none-box{
+    padding: 10%;
+}
+.block-none-box .flex{
+    flex-direction: column;
+}
+.block-none-box .flex img{
+    width: 100%;
+}
+.block-none-box .flex .margin-left{
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+/* replay tools */
+
+.tools div a{
+    width: 50px;
+    height: 50px;
+}
+
+/* head */
+.head ul li {
+    font-size: 15px;
+    font-family: 'Neo Sans Pro'
+}
+
+/* vormen */
+
+.vorm {
+    height: auto;
+}
+.vorm .foto, .vertical-line {
+    display: none;
+}
+.vorm .tekst, .vorm .icoon {
+    width: 80%;
+    height: auto;
+}
+
+.vorm .icoon {
+    height: 50px;
+}
+.vormen {
+    height: auto;
+    justify-content: start;
+}
+
+.vorm .icoon img {
+    width: 50px;
+    height: 50px;
+}
+
+.vorm:nth-child(even){
+    flex-direction: row-reverse;
+}
+.vorm:nth-child(odd) .icoon{
+    flex-direction: row;
+}
+
+.vorm .line{
+    display: none;
+}
+
+/* ohters */
+.column{
+    column-count: 1;
+}
+
+.flex {
+    height: auto;
+}
+
+.second-nav-footer {
+    display: none;
+}
+
+.bg-logo{
+    display: none;
+}
+
+.background-icoon{
+    display: none;
+}
+
+/* beheerders */
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .nav-footer ul{
+        flex-direction: column;
+    }
+
+    .nav-footer ul li a {
+        font-family: 'Neo Sans Pro', Arial, Helvetica, sans-serif;
+        line-height: 30px;
+    }
+}
